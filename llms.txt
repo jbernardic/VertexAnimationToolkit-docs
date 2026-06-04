@@ -1,0 +1,25 @@
+﻿# Introduction
+
+> Vertex Animation Toolkit is an Unreal Engine 5 plugin for creating and executing Vertex Animation Textures (VAT) derived from skeletal meshes. Vertex animations are important for rendering large numbers of instances and thus improving performance.
+
+- [Introduction](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/index.md): Introduction
+- [Changelog](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/changelog.md): Reduced generated texture memory by up to ~55% by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the
+
+## Get started
+
+- [Installation](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/get_started/01-installation.md): Install the plugin from the marketplace. Make sure it is enabled in your plugin settings.
+- [Generate Textures](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/get_started/02-generate_textures.md): Choose an Animation Asset you want and click Bake VAT.
+- [Material Setup](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/get_started/03-material_setup.md): Open the Static Mesh and Edit existing or Create a new Material
+- [Runtime](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/get_started/04-runtime.md): To use vertex animation textures in your game, you can use one of the following systems:
+- [Max Texture Size](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/get_started/05-max_texture_size.md): Max Texture Size is the upper limit for the dimensions of the position and normal texture arrays that Bake VAT generates. The toolkit never creates a texture larger than this value on either axis.
+
+## Material nodes
+
+- [Play Animation](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/material_nodes/01-play_animation.md): Use this node inside your static mesh material to play vertex animation.
+- [Play Helper](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/material_nodes/02-play_helper.md): Use this node to easily handle switching between multiple animations.
+
+## Runtime
+
+- [ISM or HISM](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/runtime/01-ism_hism.md): Use ISM instead of HISM on engine version 5.4 and above, as it supports LODs just as well and provides better performance.
+- [Vertex Animation Subsystem](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/runtime/02-vertex_animation_subsystem.md): This is a subsystem that makes it easy to create and update instances without worrying about the technology under the hood. It provides functions for handling instances which are exposed to blueprint.
+- [Vertex Animation Instance (component)](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/runtime/03-vertex_animation_instance.md): Use this if you want to use vertex animations for individual actors in the scene. For each actor that contains the component, this component will create and update ISM / HISM instances automatically.
