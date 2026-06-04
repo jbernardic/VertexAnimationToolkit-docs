@@ -2,6 +2,13 @@
 
 # Changelog
 
+=== <b>Update 1.2.8</b> _6/4/2026_
+- Reduced generated texture memory by up to <b>~55%</b> by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the maximum size
+- Vertex (width) and frame (height) axes are now sized independently to avoid wasted texture space
+- Texture size is now set in <b>Project Settings</b> as <b>Max Texture Size</b> (no more bake-time popup)
+- Minor bugs fixed
+===
+
 === <b>Update 1.2.3</b> _5/17/2025_
 - Bypass previous vertex and frame count limitations
 - Minor bugs fixed
