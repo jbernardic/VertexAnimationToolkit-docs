@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/sitemap.xml

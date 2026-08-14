@@ -1,0 +1,174 @@
+{
+  "version": "4.6.0",
+  "created": "2026-08-14T11:36:36Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "404.md"
+    },
+    {
+      "path": "assets\\getstarted_2.png"
+    },
+    {
+      "path": "assets\\getstarted_3.png"
+    },
+    {
+      "path": "assets\\getstarted_4.png"
+    },
+    {
+      "path": "assets\\getstarted_5_1.png"
+    },
+    {
+      "path": "assets\\getstarted_5.jpg"
+    },
+    {
+      "path": "assets\\getstarted_5.png"
+    },
+    {
+      "path": "assets\\installation.png"
+    },
+    {
+      "path": "assets\\playanimation.png"
+    },
+    {
+      "path": "assets\\playhelper.png"
+    },
+    {
+      "path": "assets\\vertexanimationinstance_1.png"
+    },
+    {
+      "path": "assets\\vertexanimationinstance_2.png"
+    },
+    {
+      "path": "assets\\vertexanimationtextures_1.png"
+    },
+    {
+      "path": "changelog.md"
+    },
+    {
+      "path": "changelog\\index.html"
+    },
+    {
+      "path": "get_started\\01-installation.md"
+    },
+    {
+      "path": "get_started\\01-installation\\index.html"
+    },
+    {
+      "path": "get_started\\02-generate_textures.md"
+    },
+    {
+      "path": "get_started\\02-generate_textures\\index.html"
+    },
+    {
+      "path": "get_started\\03-material_setup.md"
+    },
+    {
+      "path": "get_started\\03-material_setup\\index.html"
+    },
+    {
+      "path": "get_started\\04-runtime.md"
+    },
+    {
+      "path": "get_started\\04-runtime\\index.html"
+    },
+    {
+      "path": "get_started\\05-max_texture_size.md"
+    },
+    {
+      "path": "get_started\\05-max_texture_size\\index.html"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "index.md"
+    },
+    {
+      "path": "llms.txt"
+    },
+    {
+      "path": "material_nodes\\01-play_animation.md"
+    },
+    {
+      "path": "material_nodes\\01-play_animation\\index.html"
+    },
+    {
+      "path": "material_nodes\\02-play_helper.md"
+    },
+    {
+      "path": "material_nodes\\02-play_helper\\index.html"
+    },
+    {
+      "path": "resources\\css\\retype.css"
+    },
+    {
+      "path": "resources\\fonts\\Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources\\fonts\\Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources\\js\\config.js"
+    },
+    {
+      "path": "resources\\js\\instagram.js"
+    },
+    {
+      "path": "resources\\js\\lunr.js"
+    },
+    {
+      "path": "resources\\js\\prism.js"
+    },
+    {
+      "path": "resources\\js\\retype.js"
+    },
+    {
+      "path": "resources\\js\\search.json"
+    },
+    {
+      "path": "resources\\lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "runtime\\01-ism_hism.md"
+    },
+    {
+      "path": "runtime\\01-ism_hism\\index.html"
+    },
+    {
+      "path": "runtime\\02-vertex_animation_subsystem.md"
+    },
+    {
+      "path": "runtime\\02-vertex_animation_subsystem\\index.html"
+    },
+    {
+      "path": "runtime\\03-vertex_animation_instance.md"
+    },
+    {
+      "path": "runtime\\03-vertex_animation_instance\\index.html"
+    },
+    {
+      "path": "sitemap.xml"
+    }
+  ]
+}
