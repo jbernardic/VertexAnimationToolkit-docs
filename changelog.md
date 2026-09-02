@@ -2,6 +2,12 @@
 
 # Changelog
 
+=== <b>Update 1.2.9</b> _9/2/2026_
+- Fixed broken playback when an animation has more frames than <b>Max Texture Size</b> (frame tiling now samples the correct texture slice and row)
+- Fixed baking when <b>both</b> the vertex count and the frame count exceed <b>Max Texture Size</b> (re-bake affected assets after updating)
+- Removed the <b>Texture Size</b> input from the Play Animation node — texture dimensions are now read from the texture automatically
+===
+
 === <b>Update 1.2.8</b> _6/4/2026_
 - Reduced generated texture memory by up to <b>~55%</b> by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the maximum size
 - Vertex (width) and frame (height) axes are now sized independently to avoid wasted texture space
