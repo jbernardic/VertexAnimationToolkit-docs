@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/VertexAnimationToolkit-docs-v2">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.840022832728">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.841759553319">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>Changelog</title>
     <meta name="title" content="Changelog">
-    <meta name="description" content="Reduced generated texture memory by up to ~55% by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the">
+    <meta name="description" content="Fixed broken playback when an animation has more frames than Max Texture Size (frame tiling now samples the correct texture slice and row)">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/changelog/">
@@ -23,7 +23,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/changelog/">
     <meta property="og:title" content="Changelog">
-    <meta property="og:description" content="Reduced generated texture memory by up to ~55% by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the">
+    <meta property="og:description" content="Fixed broken playback when an animation has more frames than Max Texture Size (frame tiling now samples the correct texture slice and row)">
     <meta property="og:site_name" content="Vertex Animation Toolkit">
     <meta property="og:locale" content="en_US">
 
@@ -31,18 +31,18 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/changelog/">
     <meta name="twitter:title" content="Changelog">
-    <meta name="twitter:description" content="Reduced generated texture memory by up to ~55% by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the">
+    <meta name="twitter:description" content="Fixed broken playback when an animation has more frames than Max Texture Size (frame tiling now samples the correct texture slice and row)">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/changelog.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.6.0.840022832728" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.841759553319" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.840022832728" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.841759553319" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.840022832728" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.841759553319" data-turbo-eval="false" defer></script>
 
     <!-- Floating "Get it on Fab" button, shown on every page (matches janxy.dev) -->
     <style>
@@ -189,12 +189,20 @@
 
                 <!-- Page content  -->
 <h1 id="changelog">Changelog</h1>
+<doc-panel id="bupdate-129b-_922026_">
+    <template #title><b>Update 1.2.9</b> <em>9/2/2026</em></template>
+<ul>
+<li>Fixed broken playback when an animation has more frames than <b>Max Texture Size</b> (frame tiling now samples the correct texture slice and row)</li>
+<li>Fixed baking when <b>both</b> the vertex count and the frame count exceed <b>Max Texture Size</b> (re-bake affected assets after updating)</li>
+<li>Removed the <b>Texture Size</b> input from the Play Animation node — texture dimensions are now read from the texture automatically</li>
+</ul>
+</doc-panel>
 <doc-panel id="bupdate-128b-_642026_">
     <template #title><b>Update 1.2.8</b> <em>6/4/2026</em></template>
 <ul>
 <li>Reduced generated texture memory by up to <b>~55%</b> by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the maximum size</li>
 <li>Vertex (width) and frame (height) axes are now sized independently to avoid wasted texture space</li>
-<li>Texture size is now set in <b>Project Settings</b> as <b>Max Texture Size</b> (no more bake-time popup)</li>
+<li>Texture size is now set in <b>Editor Preferences</b> as <b>Max Texture Size</b> (no more bake-time popup)</li>
 <li>Minor bugs fixed</li>
 </ul>
 </doc-panel>
@@ -237,11 +245,11 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../runtime/03-vertex_animation_instance/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../uefn/01-uefn_tutorial/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Vertex Animation Instance (component)</span>
+                                <span class="block mt-1">Using VAT in UEFN</span>
                             </span>
                         </a>
                     </div>

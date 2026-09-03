@@ -3,7 +3,7 @@
 > Vertex Animation Toolkit is an Unreal Engine 5 plugin for creating and executing Vertex Animation Textures (VAT) derived from skeletal meshes. Vertex animations are important for rendering large numbers of instances and thus improving performance.
 
 - [Introduction](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/index.md): Introduction
-- [Changelog](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/changelog.md): Reduced generated texture memory by up to ~55% by sizing the position/normal texture arrays to fit the mesh and animation instead of always padding to the
+- [Changelog](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/changelog.md): Fixed broken playback when an animation has more frames than Max Texture Size (frame tiling now samples the correct texture slice and row)
 
 ## Get started
 
@@ -23,3 +23,7 @@
 - [ISM or HISM](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/runtime/01-ism_hism.md): Use ISM instead of HISM on engine version 5.4 and above, as it supports LODs just as well and provides better performance.
 - [Vertex Animation Subsystem](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/runtime/02-vertex_animation_subsystem.md): This is a subsystem that makes it easy to create and update instances without worrying about the technology under the hood. It provides functions for handling instances which are exposed to blueprint.
 - [Vertex Animation Instance (component)](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/runtime/03-vertex_animation_instance.md): Use this if you want to use vertex animations for individual actors in the scene. For each actor that contains the component, this component will create and update ISM / HISM instances automatically.
+
+## UEFN
+
+- [Using VAT in UEFN](https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/uefn/01-uefn_tutorial.md): Vertex Animation Toolkit is an Unreal Engine editor plugin, and UEFN does not load custom plugins. You can still use vertex animation textures in your Fortnite island: bake them in Unreal Engine 5, then copy the generated assets and the plugin's material functions into your UEFN project.

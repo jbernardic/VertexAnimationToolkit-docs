@@ -6,7 +6,7 @@ than this value on either axis.
 
 ## Where to change it
 
-1. Open **Edit → Project Settings**.
+1. Open **Edit → Editor Preferences**.
 2. Under the **Plugins** category, select **VertexAnimationToolkit**.
 3. Set **Max Texture Size** from the dropdown.
 

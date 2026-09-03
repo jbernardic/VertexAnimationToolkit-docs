@@ -11,36 +11,36 @@
     <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Play Helper</title>
-    <meta name="title" content="Play Helper">
-    <meta name="description" content="Use this node to easily handle switching between multiple animations.">
+    <title>Using VAT in UEFN</title>
+    <meta name="title" content="Using VAT in UEFN">
+    <meta name="description" content="Vertex Animation Toolkit is an Unreal Engine editor plugin, and UEFN does not load custom plugins. You can still use vertex animation textures in your Fortnite island: bake them in Unreal Engine 5, then copy the generated assets and the plugin's material functions into your UEFN project.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/material_nodes/02-play_helper/">
+    <link rel="canonical" href="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/uefn/01-uefn_tutorial/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/material_nodes/02-play_helper/">
-    <meta property="og:title" content="Play Helper">
-    <meta property="og:description" content="Use this node to easily handle switching between multiple animations.">
-    <meta property="og:image" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/assets/playhelper.png">
+    <meta property="og:url" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/uefn/01-uefn_tutorial/">
+    <meta property="og:title" content="Using VAT in UEFN">
+    <meta property="og:description" content="Vertex Animation Toolkit is an Unreal Engine editor plugin, and UEFN does not load custom plugins. You can still use vertex animation textures in your Fortnite island: bake them in Unreal Engine 5, then copy the generated assets and the plugin's material functions into your UEFN project.">
+    <meta property="og:image" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/assets/uefn_1_editorpreferences.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Play Helper">
+    <meta property="og:image:alt" content="Using VAT in UEFN">
     <meta property="og:site_name" content="Vertex Animation Toolkit">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/material_nodes/02-play_helper/">
-    <meta name="twitter:title" content="Play Helper">
-    <meta name="twitter:description" content="Use this node to easily handle switching between multiple animations.">
-    <meta name="twitter:image" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/assets/playhelper.png">
-    <meta name="twitter:image:alt" content="Play Helper">
+    <meta name="twitter:url" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/uefn/01-uefn_tutorial/">
+    <meta name="twitter:title" content="Using VAT in UEFN">
+    <meta name="twitter:description" content="Vertex Animation Toolkit is an Unreal Engine editor plugin, and UEFN does not load custom plugins. You can still use vertex animation textures in your Fortnite island: bake them in Unreal Engine 5, then copy the generated assets and the plugin's material functions into your UEFN project.">
+    <meta name="twitter:image" content="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/assets/uefn_1_editorpreferences.png">
+    <meta name="twitter:image:alt" content="Using VAT in UEFN">
 
     <!-- Alternate Markdown -->
-    <link rel="alternate" type="text/markdown" href="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/material_nodes/02-play_helper.md">
+    <link rel="alternate" type="text/markdown" href="https://jbernardic.github.io/VertexAnimationToolkit-docs-v2/uefn/01-uefn_tutorial.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -194,7 +194,25 @@
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
-<h1 id="play-helper">Play Helper</h1>
+<h1 id="using-vat-in-uefn">Using VAT in UEFN</h1>
+<p>Vertex Animation Toolkit is an Unreal Engine editor plugin, and UEFN does not load
+custom plugins. You can still use vertex animation textures in your Fortnite island:
+bake them in Unreal Engine 5, then copy the generated assets and the plugin&#x27;s material
+functions into your UEFN project.</p>
+<p>This page walks through the full process.</p>
+<h2 id="1-set-max-texture-size-to-4096">1. Set Max Texture Size to 4096</h2>
+<p>UEFN does not support the plugin&#x27;s default texture size of <strong>8192</strong>, so lower the
+limit before you bake.</p>
+<ol>
+<li>
+<p>In Unreal Engine 5, open <strong>Edit → Editor Preferences</strong>.</p>
+<p><img src="../../assets/uefn_1_editorpreferences.png" alt="" class="max-w-full h-auto" width="546" height="418" /></p>
+</li>
+<li>
+<p>Search for <strong>vertex animation toolkit</strong>, then set <strong>Max Texture Size</strong> to <strong>4096</strong>.</p>
+<p><img src="../../assets/uefn_2_maxtexturesize.png" alt="" class="max-w-full h-auto" width="1245" height="673" /></p>
+</li>
+</ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -207,37 +225,91 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>TIP</h5>
-<p>Use this node to easily handle switching between multiple animations.</p>
+<p>Meshes with more than 4096 vertices or animations with more than 4096 frames are
+automatically split into multiple texture-array slices, so 4096 does not limit what you
+can bake. See <a href="../../get_started/05-max_texture_size/">Max Texture Size</a>.</p>
         </div>
     </div>
 </div>
+<h2 id="2-copy-the-material-functions-to-uefn">2. Copy the material functions to UEFN</h2>
+<p>The plugin&#x27;s runtime material functions need to exist in your UEFN project. In the
+Content Browser, open <strong>Plugins → Vertex Animation Toolkit Content → Blueprints</strong> and
+copy these three material functions into your UEFN project:</p>
+<ul>
+<li><strong>VATK_PlayAnimation</strong></li>
+<li><strong>VATK_MorphTargets</strong></li>
+<li><strong>VATK_GradientMap</strong></li>
+</ul>
 <figure class="content-center">
-    <img src="../../assets/playhelper.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="250" height="118" />
+    <img src="../../assets/uefn_3_materialfunctions.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="602" height="340" />
     <figcaption class="caption"></figcaption>
 </figure>
-<h2 id="inputs">Inputs</h2>
-<doc-panel id="animation-to-play" collapsed>
-    <template #title>Animation To Play</template>
-<p>Index of an animation you want to play.</p>
-</doc-panel>
-<doc-panel id="transition-frames" collapsed>
-    <template #title>Transition Frames</template>
-<p>Number of final frames to take from the previous animation.<br/>
-Use this if you want finer transitions and don&#x27;t need looping.</p>
-</doc-panel>
-<h2 id="outputs">Outputs</h2>
-<doc-panel id="start-frame" collapsed>
-    <template #title>Start Frame</template>
-<p>Connect this to <a href="../01-play_animation/#inputs">Start Frame</a> pin of Play Animation node.</p>
-</doc-panel>
-<doc-panel id="end-frame" collapsed>
-    <template #title>End Frame</template>
-<p>Connect this to <a href="../01-play_animation/#inputs">End Frame</a> pin of Play Animation node.</p>
-</doc-panel>
-<doc-panel id="max-frames" collapsed>
-    <template #title>Max Frames</template>
-<p>Connect this to <a href="../01-play_animation/#inputs">Max Frames</a> pin of Play Animation node.</p>
-</doc-panel>
+<p>Select all three, right-click and choose <strong>Asset Actions → Migrate...</strong>, then pick the
+<strong>Content</strong> folder of your UEFN project as the destination.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-tip" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M7.90625 2.15625C4.50944 2.15625 2.15625 4.58563 2.15625 7.54688C2.15625 8.96138 2.76575 9.88281 3.57075 10.8589L3.87837 11.2226C4.19894 11.6021 4.554 12.0218 4.84581 12.4416C5.25406 13.0324 5.61775 13.7296 5.7385 14.5834C5.76728 14.8608 5.68746 15.1386 5.51579 15.3583C5.34413 15.5781 5.09399 15.7228 4.8179 15.7621C4.5418 15.8013 4.26124 15.7321 4.03512 15.5689C3.809 15.4056 3.65493 15.1612 3.60525 14.8867C3.54775 14.4814 3.37094 14.1004 3.07338 13.6692C2.8306 13.3302 2.57055 13.0039 2.29425 12.6917C2.1735 12.5479 2.04556 12.397 1.909 12.2317C1.00769 11.1406 0 9.72613 0 7.54688C0 3.32062 3.39681 0 7.90625 0C12.4157 0 15.8125 3.32062 15.8125 7.54688C15.8125 9.72613 14.8048 11.1406 13.9035 12.2317C13.7669 12.397 13.639 12.5479 13.5183 12.6903C13.2207 13.0424 12.9677 13.3414 12.7406 13.6692C12.4416 14.1004 12.2662 14.4814 12.2087 14.8867C12.1557 15.1584 12.0003 15.3994 11.7747 15.5598C11.5492 15.7202 11.2706 15.7879 10.9965 15.7488C10.7225 15.7096 10.474 15.5667 10.3023 15.3496C10.1306 15.1325 10.0489 14.8577 10.074 14.582C10.1948 13.7296 10.5584 13.0324 10.9667 12.4416C11.2585 12.0218 11.6136 11.6021 11.9341 11.2226C12.0419 11.0961 12.1454 10.9739 12.2403 10.8589C13.0468 9.88281 13.6562 8.96138 13.6562 7.54688C13.6562 4.58563 11.3031 2.15625 7.90625 2.15625ZM4.67188 17.25H11.1406C11.4266 17.25 11.7008 17.3636 11.903 17.5658C12.1052 17.768 12.2188 18.0422 12.2188 18.3281C12.2188 18.6141 12.1052 18.8883 11.903 19.0905C11.7008 19.2927 11.4266 19.4062 11.1406 19.4062H4.67188C4.38594 19.4062 4.11171 19.2927 3.90953 19.0905C3.70734 18.8883 3.59375 18.6141 3.59375 18.3281C3.59375 18.0422 3.70734 17.768 3.90953 17.5658C4.11171 17.3636 4.38594 17.25 4.67188 17.25ZM5.03125 21.9219C5.03125 21.6359 5.14484 21.3617 5.34703 21.1595C5.54921 20.9573 5.82344 20.8438 6.10938 20.8438H9.70312C9.98906 20.8438 10.2633 20.9573 10.4655 21.1595C10.6677 21.3617 10.7812 21.6359 10.7812 21.9219C10.7812 22.2078 10.6677 22.482 10.4655 22.6842C10.2633 22.8864 9.98906 23 9.70312 23H6.10938C5.82344 23 5.54921 22.8864 5.34703 22.6842C5.14484 22.482 5.03125 22.2078 5.03125 21.9219Z" />
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>TIP</h5>
+<p>Copy all three functions together. <strong>VATK_PlayAnimation</strong> calls <strong>VATK_MorphTargets</strong>,
+which in turn calls <strong>VATK_GradientMap</strong>. If any function call shows up as unset after
+copying, open the function and reassign it.</p>
+        </div>
+    </div>
+</div>
+<h2 id="3-bake-the-vat-in-unreal-engine-5">3. Bake the VAT in Unreal Engine 5</h2>
+<p>Bake the animation in Unreal Engine 5 as usual, see <a href="../../get_started/02-generate_textures/">Generate Textures</a>.
+Then copy the four generated assets to your UEFN project the same way as in step 2:</p>
+<ul>
+<li>the <strong>Static Mesh</strong></li>
+<li>the <strong>Positions</strong> texture array</li>
+<li>the <strong>Normals</strong> texture array</li>
+<li>the <strong>Play Helper</strong> material function</li>
+</ul>
+<h2 id="4-disable-lerp-uvs-on-the-static-mesh">4. Disable Lerp UVs on the static mesh</h2>
+<p>In UEFN, open the copied static mesh. Under <strong>Nanite Settings</strong>, uncheck <strong>Lerp UVs</strong> and
+click <strong>Apply Changes</strong>.</p>
+<figure class="content-center">
+    <img src="../../assets/uefn_4_disablelerpuvs.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="493" height="625" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<div class="warning"><p>This step is required. The toolkit stores each vertex&#x27;s texture location in UV channel 1.
+When <strong>Lerp UVs</strong> is enabled, Nanite interpolates these values while building the mesh,
+which breaks the animation lookup in the material.</p>
+</div>
+<h2 id="5-set-up-the-material">5. Set up the material</h2>
+<p>Create the material in UEFN the same way as in Unreal Engine 5, see <a href="../../get_started/03-material_setup/">Material Setup</a>.
+Use the material functions you copied in step 2 and the textures and Play Helper from step 3, and assign the material to the static mesh.</p>
+<h2 id="6-use-it-in-scene-graph">6. Use it in Scene Graph</h2>
+<p>The baked asset is a regular static mesh, so it can be placed like any other mesh.
+In <strong>Scene Graph</strong>, add a <strong>Mesh</strong> component to your entity and set its mesh to the baked
+static mesh. The animation plays entirely inside the material, so no additional runtime
+setup is needed.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-tip"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-tip" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M7.90625 2.15625C4.50944 2.15625 2.15625 4.58563 2.15625 7.54688C2.15625 8.96138 2.76575 9.88281 3.57075 10.8589L3.87837 11.2226C4.19894 11.6021 4.554 12.0218 4.84581 12.4416C5.25406 13.0324 5.61775 13.7296 5.7385 14.5834C5.76728 14.8608 5.68746 15.1386 5.51579 15.3583C5.34413 15.5781 5.09399 15.7228 4.8179 15.7621C4.5418 15.8013 4.26124 15.7321 4.03512 15.5689C3.809 15.4056 3.65493 15.1612 3.60525 14.8867C3.54775 14.4814 3.37094 14.1004 3.07338 13.6692C2.8306 13.3302 2.57055 13.0039 2.29425 12.6917C2.1735 12.5479 2.04556 12.397 1.909 12.2317C1.00769 11.1406 0 9.72613 0 7.54688C0 3.32062 3.39681 0 7.90625 0C12.4157 0 15.8125 3.32062 15.8125 7.54688C15.8125 9.72613 14.8048 11.1406 13.9035 12.2317C13.7669 12.397 13.639 12.5479 13.5183 12.6903C13.2207 13.0424 12.9677 13.3414 12.7406 13.6692C12.4416 14.1004 12.2662 14.4814 12.2087 14.8867C12.1557 15.1584 12.0003 15.3994 11.7747 15.5598C11.5492 15.7202 11.2706 15.7879 10.9965 15.7488C10.7225 15.7096 10.474 15.5667 10.3023 15.3496C10.1306 15.1325 10.0489 14.8577 10.074 14.582C10.1948 13.7296 10.5584 13.0324 10.9667 12.4416C11.2585 12.0218 11.6136 11.6021 11.9341 11.2226C12.0419 11.0961 12.1454 10.9739 12.2403 10.8589C13.0468 9.88281 13.6562 8.96138 13.6562 7.54688C13.6562 4.58563 11.3031 2.15625 7.90625 2.15625ZM4.67188 17.25H11.1406C11.4266 17.25 11.7008 17.3636 11.903 17.5658C12.1052 17.768 12.2188 18.0422 12.2188 18.3281C12.2188 18.6141 12.1052 18.8883 11.903 19.0905C11.7008 19.2927 11.4266 19.4062 11.1406 19.4062H4.67188C4.38594 19.4062 4.11171 19.2927 3.90953 19.0905C3.70734 18.8883 3.59375 18.6141 3.59375 18.3281C3.59375 18.0422 3.70734 17.768 3.90953 17.5658C4.11171 17.3636 4.38594 17.25 4.67188 17.25ZM5.03125 21.9219C5.03125 21.6359 5.14484 21.3617 5.34703 21.1595C5.54921 20.9573 5.82344 20.8438 6.10938 20.8438H9.70312C9.98906 20.8438 10.2633 20.9573 10.4655 21.1595C10.6677 21.3617 10.7812 21.6359 10.7812 21.9219C10.7812 22.2078 10.6677 22.482 10.4655 22.6842C10.2633 22.8864 9.98906 23 9.70312 23H6.10938C5.82344 23 5.54921 22.8864 5.34703 22.6842C5.14484 22.482 5.03125 22.2078 5.03125 21.9219Z" />
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>TIP</h5>
+<p>The <a href="../../get_started/04-runtime/">Runtime</a> helpers (Vertex Animation Subsystem, ISM /
+HISM components and the Vertex Animation Instance component) are part of the plugin and
+are not available in UEFN. Use the static mesh directly instead.</p>
+        </div>
+    </div>
+</div>
 
                 
                 <!-- Required only on API pages -->
@@ -247,20 +319,20 @@ Use this if you want finer transitions and don&#x27;t need looping.</p>
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../material_nodes/01-play_animation/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../runtime/03-vertex_animation_instance/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Play Animation</span>
+                                <span class="block mt-1">Vertex Animation Instance (component)</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../runtime/01-ism_hism/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../changelog/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">ISM or HISM</span>
+                                <span class="block mt-1">Changelog</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -304,6 +376,6 @@ Use this if you want finer transitions and don&#x27;t need looping.</p>
 
     <div id="retype-overlay-target"></div>
 
-        <script data-cfasync="false">window.__DOCS__ = { "title": "Play Helper", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/material_nodes/02-play_helper.md" }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Using VAT in UEFN", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/uefn/01-uefn_tutorial.md" }</script>
 </body>
 </html>
