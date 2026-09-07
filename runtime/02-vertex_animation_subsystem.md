@@ -3,6 +3,10 @@
 This is a subsystem that makes it easy to create and update instances without worrying about the technology under the hood. <br/>
 It provides functions for handling instances which are exposed to blueprint.
 
+!!! warning
+The material of the static mesh must have **Used with Instanced Static Meshes** enabled, otherwise the instances render with the default material. Enable it in the material Details panel under **Usage** and save the material.
+!!!
+
 ## Functions
 
 ```cpp

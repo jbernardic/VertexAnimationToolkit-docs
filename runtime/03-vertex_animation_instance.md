@@ -5,6 +5,10 @@ For each actor that contains the component, this component will create and updat
 
 To use it, simply add this component to your actor and set its **Static Mesh**. Instance of it will be created based on actors transform.
 
+!!! warning
+The material of the static mesh must have **Used with Instanced Static Meshes** enabled, otherwise the instances render with the default material. Enable it in the material Details panel under **Usage** and save the material.
+!!!
+
 ## Properties
 ![](../assets/VertexAnimationInstance_1.png)
 
